@@ -21,4 +21,4 @@ jobs:
 
       - name: Check for obvious private placeholders
         run: |
-          ! git grep -n "BEGIN PRIVATE KEY\|ghp_\|gho_\|sk-\|DATAFORSEO_PASSWORD=.*[A-Za-z0-9]" -- ':!README.md'
+          ! git grep -n "BEGIN PRIVATE KEY\|ghp_\|gho_\|sk-\|DATAFORSEO_PASSWORD=.*[A-Za-z0-9]" -- ':!README.md' ':!.github/workflows/validate.yml'
