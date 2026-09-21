@@ -1,0 +1,85 @@
+name: SEO task
+description: Track content, technical SEO, internal linking, metadata, or reporting work.
+title: "[SEO] "
+labels:
+  - seo
+body:
+  - type: dropdown
+    id: task_type
+    attributes:
+      label: Task type
+      options:
+        - Content
+        - Technical SEO
+        - Internal linking
+        - Metadata
+        - Schema
+        - Reporting
+        - Research
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Expected impact
+      options:
+        - High
+        - Medium
+        - Low
+        - Unknown
+    validations:
+      required: true
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Effort
+      options:
+        - Small
+        - Medium
+        - Large
+        - Unknown
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What needs to be improved?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link to GSC, DataForSEO, audit output, page, query, or report evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommended fix
+      description: What should change?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What must be true for this to be done?
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: How should this be verified after shipping?
+      value: |
+        - [ ] Crawl or inspect affected URL/template
+        - [ ] Confirm indexability/canonical/metadata as applicable
+        - [ ] Add GSC follow-up date
+    validations:
+      required: true

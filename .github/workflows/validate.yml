@@ -1,0 +1,24 @@
+name: Validate examples
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate example site config
+        run: python scripts/validate_site_config.py config/site.example.json
+
+      - name: Check for obvious private placeholders
+        run: |
+          ! git grep -n "BEGIN PRIVATE KEY\|ghp_\|gho_\|sk-\|DATAFORSEO_PASSWORD=.*[A-Za-z0-9]" -- ':!README.md'

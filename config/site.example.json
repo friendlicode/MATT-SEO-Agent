@@ -1,0 +1,60 @@
+{
+  "site_name": "Example Site",
+  "domain": "https://www.example.com",
+  "cms": "wordpress",
+  "primary_audience": "People searching for helpful information, tools, products, or entertainment in this site's niche.",
+  "business_goal": "Grow qualified organic traffic and convert visitors into subscribers, customers, leads, or repeat users.",
+  "markets": [
+    {
+      "country": "United States",
+      "language": "English",
+      "location_code": 2840,
+      "language_code": "en"
+    }
+  ],
+  "topics": [
+    "Primary topic category",
+    "Secondary topic category",
+    "Comparison or alternatives topic",
+    "How-to topic"
+  ],
+  "competitors": [
+    "https://www.competitor-one.example",
+    "https://www.competitor-two.example"
+  ],
+  "conversion_events": [
+    "newsletter signup",
+    "account creation",
+    "contact form",
+    "purchase"
+  ],
+  "publishing_constraints": {
+    "tone": "Clear, useful, and trustworthy.",
+    "cadence": "Two to four high-quality updates per month.",
+    "avoid": [
+      "keyword stuffing",
+      "thin AI-generated pages",
+      "unverified claims",
+      "duplicated titles or metadata"
+    ]
+  },
+  "integrations": {
+    "google_search_console": {
+      "enabled": true,
+      "property_url": "https://www.example.com/"
+    },
+    "dataforseo": {
+      "enabled": true,
+      "default_location_code": 2840,
+      "default_language_code": "en"
+    },
+    "github": {
+      "enabled": true,
+      "repo": "OWNER/REPO"
+    }
+  },
+  "notes": [
+    "Replace every example value before using this config for a real site.",
+    "Keep private performance data out of public commits."
+  ]
+}

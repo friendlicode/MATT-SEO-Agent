@@ -1,0 +1,25 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Keep generated output local unless intentionally publishing examples.
+outputs/*
+!outputs/.gitkeep
+
+# Local private configs.
+config/*.local.json
+config/*private*
+config/*secret*
+
+# Private exports.
+exports/
+data/private/
+*.xlsx
+*.xls

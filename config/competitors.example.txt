@@ -1,0 +1,3 @@
+https://www.competitor-one.example
+https://www.competitor-two.example
+https://www.competitor-three.example
